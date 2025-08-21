@@ -26,3 +26,9 @@ export interface Cart {
   dispensedDrink?: DrinkId;
   cancelled?: boolean;
 }
+
+export interface MachineState {
+  inventory: Inventory;
+  cart: Cart;
+  state: UiState;
+}
